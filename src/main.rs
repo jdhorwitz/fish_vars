@@ -14,11 +14,11 @@ fn main() {
 
     let arguments: Vec<String> = env::args().collect();
 
-    let variable = format!("{}", &arguments[1]);
-
     match OpenOptions::new().create(true).append(true).open(path) {
         Ok(ref mut file) => {
-            writeln!(file, "set -gx PATH $PATH {}", variable).unwrap();
+            for v in &arguments {
+                writeln!(file, "set -gx PATH $PATH {}", v).unwrap();
+            }
         }
         Err(err) => {
             panic!("Failed to open file: {}", err);
