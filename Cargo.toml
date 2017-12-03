@@ -1,6 +1,6 @@
 [package]
 name = "fish_vars"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Josh Horwitz <joshua.d.horwitz@gmail.com>"]
 description = "Command line program to quickly add a path variable to your Fish Shell config file"
 readme = "README.md"
