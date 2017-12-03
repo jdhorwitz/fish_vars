@@ -1,4 +1,19 @@
 # fish_vars
 Quick program to add path variables to Fish Shell config
 
-Simply pass a Path variable to the program and it will add it to your fish congfig file.
+Takes any number of arguments and will add them to your Fish Config file.
+
+###Example
+```
+fish_vars ~/bin /bin /josh/bin
+```
+
+###To build locally simply
+```
+cargo build
+```
+
+### Easiest Way, via cargo
+```
+cargo install fish_vars
+```
