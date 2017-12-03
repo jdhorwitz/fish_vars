@@ -1,0 +1,6 @@
+[package]
+name = "fish_vars"
+version = "0.1.0"
+authors = ["Josh Horwitz <joshua.d.horwitz@gmail.com>"]
+
+[dependencies]
