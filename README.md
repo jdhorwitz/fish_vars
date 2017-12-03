@@ -3,12 +3,12 @@ Quick program to add path variables to Fish Shell config
 
 Takes any number of arguments and will add them to your Fish Config file.
 
-###Example
+### Example
 ```
 fish_vars ~/bin /bin /josh/bin
 ```
 
-###To build locally simply
+### To build locally simply
 ```
 cargo build
 ```
