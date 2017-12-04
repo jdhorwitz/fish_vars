@@ -6,5 +6,10 @@ description = "Command line program to quickly add a path variable to your Fish 
 readme = "README.md"
 license = "MIT"
 
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "fv"
+
 [dependencies]
 

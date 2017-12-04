@@ -16,8 +16,9 @@ fn main() {
 
     match OpenOptions::new().create(true).append(true).open(path) {
         Ok(ref mut file) => {
-            for v in &arguments {
+            for v in arguments.into_iter().skip(1) {
                 writeln!(file, "set -gx PATH $PATH {}", v).unwrap();
+                println!("Successfully added {} to your path", v);
             }
         }
         Err(err) => {
