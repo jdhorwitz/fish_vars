@@ -5,7 +5,7 @@ Takes any number of arguments and will add them to your Fish Config file.
 
 ### Example
 ```
-fish_vars ~/bin /bin /josh/bin
+fv ~/bin /bin /josh/bin
 ```
 
 ### To build locally simply
